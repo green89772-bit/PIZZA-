@@ -67,7 +67,7 @@ export default function App() {
             PIZZA POWER UP
           </h1>
           <p className="text-xl md:text-2xl font-medium opacity-90 max-w-2xl mx-auto leading-relaxed">
-            親愛的家長您好：為了提升孩子的口說自信與發音準確度，我們特別開發了互動軟體。在展開這場聲音冒險前，請您參考這份清單，陪伴孩子一起挑戰！
+            親愛的家長您好：為了提升孩子的口說自信與發音準確度，<span className="text-pizza-yellow font-bold">Tr. Penny</span> 特別創作了 Speech Adventure 互動軟體。在展開這場聲音冒險前，請您參考這份清單，陪伴孩子一起挑戰！
           </p>
         </motion.div>
       </header>
@@ -167,7 +167,7 @@ export default function App() {
                       <Volume2 className="w-5 h-5 text-pizza-orange shrink-0" />
                       <div>
                         <p className="font-bold text-slate-800">聽 (Listen)</p>
-                        <p className="text-sm text-slate-600">電腦版即點即播；行動裝置啟動 AI 真人語音。</p>
+                        <p className="text-sm text-slate-600">電腦版：高品質語音即點即播。行動裝置：啟動 AI 真人語音，Pizza 老師會現身提醒背誦。</p>
                       </div>
                     </div>
                     <div className="flex gap-3">
@@ -207,7 +207,7 @@ export default function App() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     { title: "看影片", desc: "觀看 Tr. Lee 錄製的 Loom 教學影片", icon: <Monitor className="w-5 h-5" /> },
-                    { title: "找動作", desc: "在紙本稿上畫出 3 個模仿肢體動作", icon: <UserCircle2 className="w-5 h-5" /> },
+                    { title: "找動作", desc: "在紙本稿上用螢光筆畫出 3 個要模仿的肢體動作", icon: <UserCircle2 className="w-5 h-5" /> },
                     { title: "錄影片", desc: "不看稿完成 Part 1 演講並錄製影片", icon: <Mic className="w-5 h-5" /> },
                     { title: "傳雲端", desc: "將錄影上傳至指定 Drive 供老師審核", icon: <Rocket className="w-5 h-5" /> },
                   ].map((task, i) => (

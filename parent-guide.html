@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA POWER UP - 家長指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .font-heading { font-family: 'Outfit', sans-serif; }
+        .pizza-red { background-color: #E31837; }
+        .pizza-yellow { background-color: #FFD700; }
+        .pizza-orange { background-color: #FF8C00; }
+        .adventure-blue { background-color: #00A8E8; }
+        .game-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 1.5rem;
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.05);
+            transition: all 0.2s;
+        }
+        .game-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.08);
+        }
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 9999px;
+            background-color: #FF8C00;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body class="pb-20">
+    <!-- Header -->
+    <header class="pizza-red text-white py-16 px-6 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-yellow-400 text-red-600 font-bold px-4 py-1 rounded-full text-sm uppercase tracking-widest mb-4 inline-block">Speech Adventure</span>
+            <h1 class="text-5xl md:text-7xl font-heading font-black mb-6 drop-shadow-lg">PIZZA POWER UP</h1>
+            <p class="text-xl opacity-90 leading-relaxed">親愛的家長您好：為了提升孩子的口說自信與發音準確度，<span class="font-bold text-yellow-300">Tr. Penny</span> 特別創作了 Speech Adventure 互動軟體。在展開這場聲音冒險前，請您參考這份清單，陪伴孩子一起挑戰！</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-10 space-y-10">
+        <!-- Step 1 -->
+        <section class="game-card p-8 border-l-8 border-l-orange-500">
+            <div class="flex items-center gap-4 mb-6">
+                <i data-lucide="rocket" class="text-orange-500 w-8 h-8"></i>
+                <h2 class="text-2xl font-heading font-bold">🚀 冒險第一步：行前準備</h2>
+            </div>
+            <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100 mb-4">
+                <p class="text-lg font-bold text-orange-600 mb-1">最重要的一件事：</p>
+                <p class="text-2xl font-black text-slate-800">請孩子在練習前「務必背熟演講稿」。</p>
+            </div>
+            <p class="text-slate-600">💡 建議做法：背誦給爸爸媽媽聽，或先用手機錄影自我比對。</p>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-3">
+                <i data-lucide="gamepad-2" class="text-red-600 w-8 h-8"></i>
+                <h2 class="text-3xl font-heading font-black">🎮 軟體操作教學</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="game-card p-6">
+                    <div class="step-number mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-3">選擇英雄角色</h3>
+                    <p class="text-slate-600 text-sm mb-2"><strong>登入首頁：</strong>點擊孩子專屬的角色頭像。</p>
+                    <p class="text-slate-600 text-sm"><strong>專屬主題：</strong>每個角色對應不同的演講主題。</p>
+                </div>
+                <div class="game-card p-6">
+                    <div class="step-number mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-3">探索冒險地圖</h3>
+                    <p class="text-slate-600 text-sm mb-2"><strong>進度分段：</strong>選擇要練習的段落 (Part)。</p>
+                    <p class="text-slate-600 text-sm"><strong>挑戰分級：</strong>L1-3 一般練習；L4 終極挑戰。</p>
+                </div>
+                <div class="game-card p-6">
+                    <div class="step-number mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-3">核心口說練習</h3>
+                    <p class="text-red-600 font-bold text-sm mb-3">三字訣：聽、錄、看</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><strong>聽：</strong>電腦版：高品質語音即點即播。行動裝置：啟動 AI 真人語音，Pizza 老師會現身提醒背誦。</li>
+                        <li><strong>錄：</strong>能量球隨聲音起伏跳動。說完後再次點擊麥克風即可停止。</li>
+                        <li><strong>看：</strong>系統即時評分。若未通過，請再聽一次音檔並對著讀稿調整發音。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus -->
+        <section class="game-card bg-slate-900 text-white p-8 border-none">
+            <div class="flex items-center gap-4 mb-6">
+                <i data-lucide="trophy" class="text-yellow-400 w-8 h-8"></i>
+                <h2 class="text-2xl font-heading font-bold text-yellow-400">🏆 BONUS：大師級加分任務</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10">看影片：觀看 Tr. Lee 錄製的 Loom 教學影片</div>
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10">找動作：在紙本稿上用螢光筆畫出 3 個要模仿的肢體動作</div>
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10">錄影片：不看稿完成 Part 1 演講並錄製影片</div>
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10">傳雲端：將錄影上傳至指定 Drive 資料夾供老師審核</div>
+            </div>
+        </section>
+
+        <!-- Devices -->
+        <section class="game-card overflow-hidden">
+            <div class="p-6 bg-slate-50 border-bottom">
+                <h2 class="text-2xl font-heading font-bold">💻 設備建議指南</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-slate-100 text-slate-600 text-sm">
+                        <tr>
+                            <th class="p-4">優先順序</th>
+                            <th class="p-4">平台</th>
+                            <th class="p-4">優點</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="p-4 font-bold text-orange-600">🥇 首選</td>
+                            <td class="p-4">電腦 (Chrome/Edge)</td>
+                            <td class="p-4 text-sm">反應最快、辨識最穩。</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-400">🥈 次選</td>
+                            <td class="p-4">平板 (Safari/Chrome)</td>
+                            <td class="p-4 text-sm">已優化 AI 真人語音。</td>
+                        </tr>
+                        <tr class="bg-red-50">
+                            <td class="p-4 font-bold text-red-500">❌ 不建議</td>
+                            <td class="p-4">手機</td>
+                            <td class="p-4 text-sm">螢幕過小，易誤觸。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <section class="bg-yellow-100 border-2 border-yellow-400 rounded-3xl p-8 flex items-center gap-6">
+            <i data-lucide="alert-triangle" class="text-yellow-600 w-12 h-12 shrink-0"></i>
+            <div>
+                <h3 class="text-xl font-black mb-1">⚠️ 小提醒</h3>
+                <p class="text-slate-700">使用 iPad 初次錄音時，請務必點擊<strong>「允許」</strong>麥克風權限！</p>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-400 py-10">
+            <p class="font-bold text-slate-600">讓我們一起見證孩子在 Speech Adventure 中的成長！</p>
+        </footer>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
