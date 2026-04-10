@@ -1,0 +1,7 @@
+{
+  "name": "PIZZA POWER UP - 家長指南",
+  "description": "Speech Adventure 互動軟體操作手冊，陪伴孩子展開聲音冒險。",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
